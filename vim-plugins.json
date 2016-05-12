@@ -59,5 +59,25 @@
   {
     "repo": "Quramy/tsuquyomi",
     "description": "TypeScript IDE: autocompletion, goto definition, show all references"
+  },
+  {
+    "repo": "tomtom/tlib_vim",
+    "description": "vim-snipmate dependency"
+  },
+  {
+    "repo": "MarcWeber/vim-addon-mw-utils",
+    "description": "vim-snipmate dependency"
+  },
+  {
+    "repo": "garbas/vim-snipmate",
+    "description": "Support for textual snippets, similar to TextMate"
+  },
+  {
+    "repo": "alessioalex/vim-angular2-snippets",
+    "description": "Angular 2 snippets for HTML && TypeScript"
+  },
+  {
+    "repo": "vim-scripts/SnippetComplete",
+    "description": "Autocomplete for snippets via tab in insert mode"
   }
 ]
