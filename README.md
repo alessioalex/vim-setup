@@ -3,5 +3,9 @@
 replicate it:
 
 ```
-chmod +x install.sh && ./install.sh
+./install.sh
 ```
+
+dependencies:
+
+[jq](https://github.com/stedolan/jq)
