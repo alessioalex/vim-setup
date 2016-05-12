@@ -1,0 +1,63 @@
+[
+  {
+    "repo": "croaker/mustang-vim",
+    "description": "A slightly modified version of the original mustang-colorscheme for vim by hcalves"
+  },
+  {
+    "repo": "scrooloose/nerdtree",
+    "description": "Tree explorer plugin"
+  },
+  {
+    "repo": "easymotion/vim-easymotion",
+    "description": "Alternative way of navigating in a file based on highlighted chars"
+  },
+  {
+    "repo": "tomtom/tcomment_vim",
+    "description": "Toggle file-type sensible comments with a shortcut"
+  },
+  {
+    "repo": "Raimondi/delimitMate",
+    "description": "Insert mode auto-completion for quotes, parens, brackets, etc"
+  },
+  {
+    "repo": "docunext/closetag.vim",
+    "description": "Close tags automatically with CTRL+_ in insert mode."
+  },
+  {
+    "repo": "vim-scripts/BufOnly.vim",
+    "description": ":BufOnly without an argument will unload all buffers but the current one."
+  },
+  {
+    "repo": "tmhedberg/matchit",
+    "description": "Extended % matching for HTML, LaTeX, and many other languages"
+  },
+  {
+    "repo": "mattn/emmet-vim",
+    "description": "Former zencoding: expand CSS-like expressions into HTML code"
+  },
+  {
+    "repo": "othree/yajs.vim",
+    "description": "JavaScript syntax file"
+  },
+  {
+    "repo": "othree/javascript-libraries-syntax.vim",
+    "description": "Syntax file for JavaScript libraries"
+  },
+  {
+    "repo": "leafgarland/typescript-vim",
+    "description": "TypeScript syntax file"
+  },
+  {
+    "repo": "Quramy/vim-js-pretty-template",
+    "description": "Highlight JavaScript's Template Strings contents in other FileType syntax rule (HTML in Angular2 template prop)"
+  },
+  {
+    "repo": "Shougo/vimproc.vim",
+    "description": "Asynchronous execution library for Vim, needed by tsuquyomi",
+    "do": "make"
+  },
+  {
+    "repo": "Quramy/tsuquyomi",
+    "description": "TypeScript IDE: autocompletion, goto definition, show all references"
+  }
+]
