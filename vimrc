@@ -81,6 +81,8 @@
   set scrolloff=5
   " The /g (global) flag on :s substitutions by default
   set gdefault
+  " Disable folding
+  set nofoldenable
   " View tabs, where line ends etc
   set list
   " Highlight problematic white space, tab displays as >.. & space as . etc
