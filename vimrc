@@ -209,6 +209,10 @@ endif
     " For leafgarland/typescript-vim users only
     autocmd FileType typescript syn clear foldBraces
 
+  " tsuquyomi
+    " show method signature as well
+    autocmd FileType typescript setlocal completeopt+=menu,preview
+
 " GUI Settings
   if has('gui_running')
     set guioptions-=m " Remove the menu
