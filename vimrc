@@ -215,4 +215,8 @@ endif
     set guioptions-=T " Remove the toolbar
     " Prefer a slightly higher line height
     set linespace=3
+    " Setup a proper font
+    if has("gui_macvim")
+      set guifont=Menlo\ Regular:h13
+    endif
   endif
