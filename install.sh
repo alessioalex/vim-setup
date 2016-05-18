@@ -4,7 +4,7 @@ bundles_dir=$vim_dir/bundle
 prefix="✌"
 
 log(){
-  echo -e "\e[7m${prefix} $1\e[0m\n"
+  echo -e "[7m${prefix} $1[27m\n";
 }
 
 log "Creating vim folders"
