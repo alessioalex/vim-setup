@@ -16,7 +16,9 @@
   " Open new split on the right
   set splitright
   " Automatically use the current file's directory as the working directory
-  set autochdir
+  " set autochdir
+  " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+  autocmd BufEnter * silent! lcd %:p:h
   " Allow for cursor beyond last character
   set virtualedit=onemore
   " Store last 50 commands in history (defaults to 20)
@@ -212,6 +214,19 @@ endif
   " tsuquyomi
     " show method signature as well
     autocmd FileType typescript setlocal completeopt+=menu,preview
+
+  " ctrlp
+    " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+    if executable('ag')
+      " Use Ag over Grep
+      set grepprg=ag\ --nogroup\ --nocolor
+
+      " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+      let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+      " ag is fast enough that CtrlP doesn't need to cache
+      " let g:ctrlp_use_caching = 0
+      endif
 
 " GUI Settings
   if has('gui_running')

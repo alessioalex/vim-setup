@@ -79,5 +79,9 @@
   {
     "repo": "vim-scripts/SnippetComplete",
     "description": "Autocomplete for snippets via tab in insert mode"
+  },
+  {
+    "repo": "ctrlpvim/ctrlp.vim",
+    "description": "Full path fuzzy file, buffer, mru, tag, ... finder for Vim"
   }
 ]
