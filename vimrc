@@ -15,10 +15,6 @@
   set splitbelow
   " Open new split on the right
   set splitright
-  " Automatically use the current file's directory as the working directory
-  " set autochdir
-  " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
-  autocmd BufEnter * silent! lcd %:p:h
   " Allow for cursor beyond last character
   set virtualedit=onemore
   " Store last 50 commands in history (defaults to 20)
@@ -31,6 +27,11 @@
   set visualbell
   " Source the vimrc file after saving it (slow?)
   " autocmd bufwritepost .vimrc source $MYVIMRC
+  " Automatically use the current file's directory as the working directory
+  " set autochdir
+  " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+  " autocmd BufEnter * silent! lcd %:p:h
+  autocmd BufEnter * lcd %:p:h
 
 " Directory setup
   " No backups, swap is enough in case of a crash
@@ -163,7 +164,7 @@ endif
 " Plugins
   " NERDTree
     " Make sure the working directory is set correctly
-    let NERDTreeChDirMode=2
+    let g:NERDTreeChDirMode=2
     " Toggle NERDTree with ',nt'
     nnoremap ,nt :call NERDTreeToggleInCurDir()<cr>
     " Show hidden files
@@ -226,7 +227,7 @@ endif
 
       " ag is fast enough that CtrlP doesn't need to cache
       " let g:ctrlp_use_caching = 0
-      endif
+    endif
 
 " GUI Settings
   if has('gui_running')
