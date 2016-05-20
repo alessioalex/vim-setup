@@ -83,5 +83,9 @@
   {
     "repo": "ctrlpvim/ctrlp.vim",
     "description": "Full path fuzzy file, buffer, mru, tag, ... finder for Vim"
+  },
+  {
+    "repo": "rking/ag.vim",
+    "description": "A better grep/Ack https://github.com/ggreer/the_silver_searcher"
   }
 ]

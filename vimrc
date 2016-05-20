@@ -216,8 +216,8 @@ endif
     " show method signature as well
     autocmd FileType typescript setlocal completeopt+=menu,preview
 
-  " ctrlp
-    " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+  " Ag - The Silver Searcher https://github.com/ggreer/the_silver_searcher
+  " will be used by ctrlp as well
     if executable('ag')
       " Use Ag over Grep
       set grepprg=ag\ --nogroup\ --nocolor
@@ -226,8 +226,12 @@ endif
       let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
       " ag is fast enough that CtrlP doesn't need to cache
-      " let g:ctrlp_use_caching = 0
+      let g:ctrlp_use_caching = 0
     endif
+    " start searching from your (guessed) project root instead of the cwd
+    let g:ag_working_path_mode="r"
+    " map K to search for word under cursor
+    nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " GUI Settings
   if has('gui_running')
