@@ -87,5 +87,17 @@
   {
     "repo": "rking/ag.vim",
     "description": "A better grep/Ack https://github.com/ggreer/the_silver_searcher"
+  },
+  {
+    "repo": "scrooloose/syntastic",
+    "description": "Syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user"
+  },
+  {
+    "repo": "mtscout6/syntastic-local-eslint.vim",
+    "description": "Prefer local repo install of eslint over global install with syntastic"
+  },
+  {
+    "repo": "alessioalex/syntastic-local-tslint.vim",
+    "description": "Prefer local repo install of tslint over global install with syntastic"
   }
 ]

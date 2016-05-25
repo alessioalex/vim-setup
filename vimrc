@@ -233,6 +233,23 @@ endif
     " map K to search for word under cursor
     nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+  " Syntastic
+    " Recommended settings
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+    " syntastic(tslint + tsuquyomi) integration
+    let g:syntastic_aggregate_errors = 1
+    let g:tsuquyomi_disable_quickfix = 1
+    " checkers
+    let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+    let g:syntastic_javascript_checkers = ['eslint']
+    " how to debug syntastic:
+    " let g:syntastic_debug=3
+    " :SyntasticCheck eslint
+    " :mes
+
 " GUI Settings
   if has('gui_running')
     set guioptions-=m " Remove the menu
