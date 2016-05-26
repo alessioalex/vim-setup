@@ -213,8 +213,9 @@ endif
     autocmd FileType typescript syn clear foldBraces
 
   " tsuquyomi
-    " show method signature as well
+    " show method signature + details
     autocmd FileType typescript setlocal completeopt+=menu,preview
+    let g:tsuquyomi_completion_detail = 1
 
   " Ag - The Silver Searcher https://github.com/ggreer/the_silver_searcher
   " will be used by ctrlp as well
