@@ -246,6 +246,8 @@ endif
     " checkers
     let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
     let g:syntastic_javascript_checkers = ['eslint']
+    " disable checking html doh, tidy is obsolete
+    let syntastic_mode_map = { 'passive_filetypes': ['html'] }
     " how to debug syntastic:
     " let g:syntastic_debug=3
     " :SyntasticCheck eslint
