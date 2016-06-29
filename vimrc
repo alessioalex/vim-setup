@@ -262,3 +262,14 @@ endif
       set guifont=Menlo\ Regular:h13
     endif
   endif
+
+function Encrypt()
+  %!gpg -q --cipher-algo aes256 --symmetric --armor 2>/dev/null
+endfunction
+
+function Decrypt()
+  %!gpg -q --cipher-algo aes256 --decrypt --armor 2>/dev/null
+endfunction
+
+map <silent> <F7> :call Encrypt()<Esc>
+map <silent> <F8> :call Decrypt()<Esc>
